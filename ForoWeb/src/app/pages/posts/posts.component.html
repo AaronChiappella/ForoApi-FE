@@ -1,0 +1,5 @@
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+<div *ngIf="posts.length === 0">No hay posts disponibles.</div>
+<div *ngFor="let post of posts">
+  <app-post [post]="post"></app-post> <!-- Asegúrate de que 'app-post' esté correctamente definido -->
+</div>
