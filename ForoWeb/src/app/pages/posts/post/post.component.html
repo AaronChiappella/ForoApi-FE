@@ -1,0 +1,20 @@
+<div class="card">
+  <h2 class="title">{{ post.title }}</h2>
+  <p>Author: {{ post.authorName }}</p>
+  <p class="content">{{ post.content }}</p>
+  <div class="like-section">
+    <button class="like-button">
+      <mat-icon>favorite</mat-icon> <!-- Like icon -->
+      <span>{{ post.likes }}</span> <!-- Number of likes -->
+    </button>
+    <button class="comments-button">
+      <mat-icon>comment</mat-icon> <!-- Like icon -->
+    </button>
+  </div>
+<!---<h4 class="comments-title">Comments:</h4>
+  <div *ngFor="let comment of post.comments" class="comment"> 
+    <p><strong>{{ comment.authorName }}:</strong> {{ comment.body }}</p>
+    <p class="date">{{ comment.createdDate | date }}</p> 
+  </div>
+-->
+  </div>

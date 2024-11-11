@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="layout-container">
+  <app-sidebar></app-sidebar>
+
+  <main class="content">
+    <ng-content></ng-content> <!-- Permite la proyección de contenido -->
+    <app-create-post **ngIf="isLogedIn"></app-create-post>
+    <app-posts></app-posts>
+  </main>
+</div>
+
+<app-footer></app-footer>

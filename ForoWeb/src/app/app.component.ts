@@ -1,28 +1,26 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PostComponent } from "./pages/post/post.component";
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PostsComponent } from "./pages/posts/posts.component";
+import { ReactiveFormsModule } from '@angular/forms';
+import { PostsComponent } from './pages/posts/posts.component';
+import { RegisterComponent } from './pages/users/register/register.component';
+import { LoginComponent } from './pages/users/login/login.component';
+import { routes } from './app.routes';
+import { LayoutComponent } from "./shared/components/layout/layout.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
+    RouterModule, // Aquí es donde se configuran las rutas
+    ReactiveFormsModule,
     RouterOutlet,
-    CommonModule,  
-    PostsComponent,
-    
-  ],
+    LayoutComponent,
+],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']  // Cambia 'styleUrl' a 'styleUrls'
 })
 export class AppComponent {
   title = 'ForoWeb';
-
- 
-
-  
-};
-
-
-
+}

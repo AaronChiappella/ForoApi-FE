@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { endpoint } from '../../../shared/apis/endpoints';
 import { BaseResponse } from '../../../shared/models/base-response';
-import { Post } from '../../models/post.model';
+import { Post } from '../../models/classes.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class PostService {
 
   getPosts(): Observable<BaseResponse<Post[]>> {
     return this.http.get<BaseResponse<Post[]>>(endpoint.LIST_POST);
-}
+  }
 
   createPost(postData: any): Observable<any> {
     return this.http.post(endpoint.POST_REGISTER, postData);

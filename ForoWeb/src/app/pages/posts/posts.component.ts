@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../../core/models/post.model';
+import { Post } from '../../core/models/classes.model';
 import { PostService } from '../../core/services/posts/posts.service';
 import { BaseResponse } from '../../shared/models/base-response';
-import { PostComponent } from "../post/post.component";
+import { PostComponent } from "./post/post.component";
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -17,6 +17,9 @@ export class PostsComponent implements OnInit {
   errorMessage: string | null = null;
 
   constructor(private postService: PostService) {}
+
+
+
 
   ngOnInit() {
       this.loadPosts();

@@ -1,0 +1,34 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .toolbar {
+      
+    height: 50px;
+  }
+  .custom-button {
+    background: none; /* Removes background */
+    border: none; /* Removes border */
+    padding: 0; /* Removes default padding */
+    min-width: 0; /* Removes the minimum width for the button */
+    color: inherit; /* Inherit the text color from the parent */
+    font-family: inherit; /* Inherit the font-family from the parent */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  }
+  
+  .custom-button mat-icon {
+    font-size: 24px; /* Adjust icon size if needed */
+  }
+  
+  /* Hover effect */
+  .custom-button:hover {
+    transform: scale(1.1); /* Slight zoom effect for emphasis */
+  }
+  
+  /* Optional: Focus effect for accessibility */
+  .custom-button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.3); /* Add custom focus effect */
+  }
+  

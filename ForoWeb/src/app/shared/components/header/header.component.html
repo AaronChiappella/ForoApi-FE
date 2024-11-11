@@ -1,0 +1,15 @@
+<mat-toolbar class="toolbar">
+    <span>ForoWEB</span>
+    <span class="example-spacer"></span>
+    
+    <!-- Logout Button -->
+    <button *ngIf="isAuthenticated" (click)="handleLogout()" class="custom-button">
+      <mat-icon>logout</mat-icon>
+    </button>
+    
+    <!-- Login Button -->
+    <button *ngIf="!isAuthenticated" (click)="handleLogin()" class="custom-button">
+      <mat-icon>login</mat-icon>
+    </button>
+  </mat-toolbar>
+  
