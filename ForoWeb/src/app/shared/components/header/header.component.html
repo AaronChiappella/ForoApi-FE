@@ -2,6 +2,14 @@
     <span>ForoWEB</span>
     <span class="example-spacer"></span>
     
+    <button   (click)="handleProfile()" class="custom-button">
+      <mat-icon> 
+        account_circle
+      </mat-icon>
+    </button>
+
+    
+
     <!-- Logout Button -->
     <button *ngIf="isAuthenticated" (click)="handleLogout()" class="custom-button">
       <mat-icon>logout</mat-icon>

@@ -32,6 +32,16 @@ handleLogout() {
   }
 }
 
+handleProfile() {
+  try {
+    this.router.navigate(['/layout/profile']); // Ruta corregida
+      } catch (error) {
+    console.error('Navigation failed', error);
+    this.snackBar.open('User settings failed. Please try again later.', 'Close', { duration: 3000 });
+  }
+}
+
+
 handleLogin() {
   try {
     this.router.navigate(['/login']);

@@ -7,6 +7,7 @@ import { RegisterComponent } from './pages/users/register/register.component';
 import { LoginComponent } from './pages/users/login/login.component';
 import { routes } from './app.routes';
 import { LayoutComponent } from "./shared/components/layout/layout.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { LayoutComponent } from "./shared/components/layout/layout.component";
     RouterModule, // Aquí es donde se configuran las rutas
     ReactiveFormsModule,
     RouterOutlet,
-    LayoutComponent,
+    LayoutComponent
+    
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']  // Cambia 'styleUrl' a 'styleUrls'

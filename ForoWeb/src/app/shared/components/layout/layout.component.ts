@@ -5,6 +5,7 @@ import { SidebarComponent } from "../sidebar/sidebar/sidebar.component";
 import { PostsComponent } from '../../../pages/posts/posts.component';
 import { CreatePostComponent } from "../../../pages/posts/create-post/create-post.component";
 import { AuthService } from '../../../core/services/auth/auth.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -14,7 +15,8 @@ import { AuthService } from '../../../core/services/auth/auth.service';
     HeaderComponent,
     SidebarComponent,
     PostsComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    RouterOutlet
 ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'

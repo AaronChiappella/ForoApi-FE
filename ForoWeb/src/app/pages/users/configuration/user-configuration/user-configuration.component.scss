@@ -1,0 +1,50 @@
+/* Estilo personalizado para el grupo de botones */
+.custom-toggle-group {
+    display: flex;
+    justify-content: space-evenly; /* Espacio uniforme entre los botones */
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /* Asegura que ocupe todo el espacio disponible */
+  }
+  
+  /* Estilo para cada botón dentro del grupo */
+  .custom-toggle {
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    padding: 10px 20px; /* Aumenta el tamaño de los botones */
+    text-transform: capitalize; /* Capitaliza las letras */
+    border-radius: 5px;
+    border-right: 2px solid #ccc; /* Línea vertical entre los botones */
+  }
+  
+  /* Eliminar el subrayado de los botones */
+  .mat-button-toggle-appearance-legacy .mat-button-toggle-label {
+    text-decoration: none !important;
+  }
+  
+  /* Eliminar el tick (marca de selección) */
+  .mat-button-toggle .mat-button-toggle-label-content::before {
+    display: none !important;
+  }
+  
+  /* Borde del botón */
+  .mat-button-toggle {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo cuando el botón está seleccionado */
+  .mat-button-toggle-checked {
+    background-color: #cdd0ce !important; /* Color de fondo cuando está seleccionado */
+    color: white !important; /* Color de texto cuando está seleccionado */
+  }
+  
+  /* Quitar la línea vertical después del último botón */
+  .custom-toggle:last-child {
+    border-right: none; /* Eliminar la línea en el último botón */
+  }
+  
+  /* Asegura que los botones tengan el borde correctamente cuando no están seleccionados */
+  .mat-button-toggle:not(.mat-button-toggle-checked) {
+    border: 2px solid #ccc;
+  }
+  

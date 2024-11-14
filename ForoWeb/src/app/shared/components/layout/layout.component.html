@@ -3,7 +3,11 @@
 <div class="layout-container">
   <app-sidebar></app-sidebar>
 
+  
   <main class="content">
+
+    <router-outlet></router-outlet>  <!-- Aquí se cargarán las rutas hijas -->
+
     <ng-content></ng-content> <!-- Permite la proyección de contenido -->
     <app-create-post **ngIf="isLogedIn"></app-create-post>
     <app-posts></app-posts>
